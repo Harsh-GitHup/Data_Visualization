@@ -1,0 +1,199 @@
+/* CSS Styles */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  padding-top: 50px; 
+  background-image: url('../background2.jpg'); 
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* Navigation(nav) CSS */
+
+.nav {
+  background: transparent;
+  color: #fff;
+  padding: 20px 20px 11px;
+  text-align: right;
+  text-align: match-parent;
+  border: 1.5px solid rgba(152, 152, 152, 0.5);
+  backdrop-filter: blur(5px);
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+  width: 100%; 
+  z-index: 1000; 
+}
+
+.nav a {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.nav a {
+   display: inline-block;
+   background-color: rgb(11, 11, 10);
+   color: #000000;
+   padding: 10px 18px;
+   margin-top: 0;
+   border-radius: 11px;
+   text-decoration: none;
+   background: transparent;
+}
+
+.nav a:hover {
+  border:1px solid gray;
+  border-radius: 25px;
+  box-shadow:1px 1px 5px grey,inset 1px 1px 5px grey ;
+}
+
+.nav img {
+  width: 100px;
+  height: 90px;
+  position: absolute;
+  left: 50px;
+  top: 0.1px;
+}
+
+.span1 {
+    margin-left: 51%;
+}
+
+
+/* Footer CSS */
+
+footer {
+    /* background-color: #333; */
+    background: transparent;
+    border: 2px solid rgba(123, 123, 123, .5);
+    backdrop-filter: blur(100px);
+    border-radius: 20px;
+    color: #0a0a0a;
+    padding: 20px 20px -20px;
+    text-align: center;
+} 
+
+footer a {
+    color: #0b0b0b;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 15px;
+}
+
+footer a:hover{color:#d45050}
+
+
+.social1 {
+    justify-content: center;
+
+}
+.social2{
+    display: inline-flex;
+    margin-bottom: 10px;
+
+}
+.social2 a {
+    justify-content: space-around;
+}
+
+/* Form CSS */
+
+form {
+    margin: 10px 30px 20px;
+    padding: 12px;
+    background: transparent;
+    border: 2px solid rgba(123, 123, 123, .5);
+    backdrop-filter: blur(100px);
+    /* border: 1px solid #ccc; */
+    border-radius: 15px;
+}  
+
+.btn {
+    background-color: rgb(11, 11, 10); 
+    margin-left: 200px;
+    padding: 7px;
+    color: rgb(255, 255, 255);
+    border-radius: 11px;
+}
+
+.btn:hover {
+    background: transparent;
+    border: 2px solid rgba(123, 123, 123, .5);
+    backdrop-filter: blur(100px);
+    color: rgb(28, 216, 172);
+}
+
+/* Div Graphs CSS */
+  
+.h4 {
+    padding: 0;
+    background-color: rgb(148, 148, 148); 
+    margin: 2px 30px 0;
+    text-align:center; 
+    padding: 10px; 
+    border-radius: 10px;
+    background: transparent;
+    border: 2px solid rgba(123, 123, 123, .5);
+    backdrop-filter: blur(100px);
+    text-shadow: 3px 4px 2px rgba(232, 230, 230, 0.792);
+}
+
+/* .h4:hover { color: #ffffff;} */
+
+#graph-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+    /* box-sizing: border-box; */
+}
+
+#graph-container .img {
+    width: max-content;
+    height: max-content;
+}
+
+
+/* Data Frame Table CSS */
+table {
+    width: 60%;
+    overflow-x: hidden;
+    border-collapse: collapse;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow: 15px 15px 15px rgba(183, 156, 93, 0.738);
+    margin: auto;
+    margin-top: 13px;
+    margin-top: 21px;
+}
+
+table:hover {
+    cursor: crosshair;
+    color: #ff8000;
+    backdrop-filter: blur(35px);
+    box-shadow: 10px 10px 10px rgba(153, 195, 68, 0.929);
+}
+
+th, td {
+    padding: 8px;
+    border: 2px solid #717171c9;
+    border-width: 2.5px;
+    text-align: center;
+}
+
+th {
+    background-color: #f9a825;
+    color: #fff;
+}
+
+td {
+    background: transparent;
+    font-weight: 650;
+}

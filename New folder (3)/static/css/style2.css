@@ -1,0 +1,443 @@
+/* CSS Styles */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  padding-top: 50px; 
+  background-image: url('../background2.jpg'); 
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* Navigation(nav) CSS */
+
+.nav {
+  background: transparent;
+  color: #fff;
+  padding: 20px 20px 11px;
+  text-align: right;
+  text-align: match-parent;
+  border: 1.5px solid rgba(152, 152, 152, 0.5);
+  backdrop-filter: blur(5px);
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+  width: 100%; 
+  z-index: 1000; 
+}
+
+.nav a {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.nav a {
+   display: inline-block;
+   background-color: rgb(11, 11, 10);
+   color: #000000;
+   padding: 10px 18px;
+   margin-top: 0;
+   border-radius: 11px;
+   text-decoration: none;
+   background: transparent;
+}
+
+.nav a:hover {
+  border:1px solid gray;
+  border-radius: 25px;
+  box-shadow:1px 1px 5px grey,inset 1px 1px 5px grey ;
+}
+
+.nav img {
+  width: 100px;
+  height: 90px;
+  position: absolute;
+  left: 50px;
+  top: 0.1px;
+}
+
+.span1 {
+    margin-left: 51%;
+}
+
+
+/* Heading CSS */
+
+h2 {
+    color: #333;
+}
+
+h3 {
+    color: #525252;
+    font-weight: bold;
+}
+
+h2, h3 {
+    margin-bottom: 15px;
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+h4 {
+    font-style: italic;
+    font-family: cursive;
+    margin-bottom: 5px;
+}
+
+.h21 {
+    text-shadow: 3px 4px 2px rgba(99, 99, 99, 0.792);
+    color: #333;
+    text-align: start;
+}
+
+p {
+    line-height: 1.5;
+    font-weight: bold;
+}
+
+.p{
+    color: #3e3e3e; 
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 20px;
+}
+
+/* Style the main content section */
+main {
+    margin-top: 0px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+.div7 {
+    margin: 0px 40px 40px; 
+    padding: 15px; 
+    text-align: justify;
+}
+
+.img3{
+    border-radius: 10px;
+    box-shadow: 3px 4px 3px  #c1c0c0;
+}
+
+/* Footer CSS */
+
+footer {
+    /* background-color: #333; */
+    background: transparent;
+    border: 2px solid rgba(123, 123, 123, .5);
+    backdrop-filter: blur(100px);
+    border-radius: 20px;
+    color: #0a0a0a;
+    padding: 20px 20px -20px;
+    text-align: center;
+} 
+
+footer a {
+    color: #0b0b0b;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 15px;
+}
+
+footer a:hover{color:#d45050}
+
+
+.social1 {
+    justify-content: center;
+
+}
+.social2{
+    display: inline-flex;
+
+}
+.social2 a {
+    justify-content: space-around;
+}
+
+/* FORM CSS */
+
+form {
+    margin: 40px 30px 10px;
+    padding: 12px;
+    /* background-color: #f2f2f2; */
+    background: transparent;
+    border: 2px solid rgba(123, 123, 123, .5);
+    backdrop-filter: blur(100px);
+    /* border: 1px solid #ccc; */
+    border-radius: 15px;
+}  
+
+label {
+    width: 0.2px!important;
+    align-items: end;
+}
+
+.field {
+    text-align:center;
+    height: 155px;
+}
+
+.field label{
+    position: absolute;
+    right: 96%;
+}
+
+.field input {
+    position: absolute;
+    right: 69%;
+    background-color: transparent;
+    border: 1px solid rgba(1, 1, 1, 0.5);
+    backdrop-filter: blur(100px);
+    padding: 1.5px 0px 1.5px 6px;
+    border-radius: 5px;
+}
+
+.field textarea {
+    position: absolute;
+    right: 67%;
+    background-color: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(100px);
+    padding: 1.5px 0px 1.5px 6px;
+    border-radius: 5px;
+}
+
+legend b {
+    margin: 0 10px;
+}
+
+button[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 11px;
+    background: transparent;
+    border: 2px solid rgba(123, 123, 123, .5);
+    backdrop-filter: blur(100px);
+}
+
+/* button[type="submit"]:hover {
+    background-color: #555;
+} */
+
+.btn1:active {
+  background-color: #555; 
+  color: rgb(28, 216, 172);
+}
+
+/* profile card css */
+
+/* .raw {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    justify-content: space-evenly;
+} */
+
+.horizontal-list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    justify-content: space-evenly;
+    margin-top: 10px;
+}
+
+.horizontal-list li {
+    margin-right: 50px;
+}
+
+.our-team {
+  padding: 10px 0 20px;
+  margin-bottom: 30px;
+  margin: 0 65px 30px;
+  background-color: #f7f5ec;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  border-radius: 20px;
+  box-shadow: 6px 6px 6px 7px #3e3e3e;
+}
+
+.our-team .picture {
+  display: inline-block;
+  height: 100px;
+  width: 100px;
+  margin-bottom: 50px;
+  z-index: 1;
+  position: relative;
+}
+
+.our-team .picture::before {
+  content: "";
+  width: 100%;
+  height: 0;
+  border-radius: 50%;
+  background-color: #1369ce;
+  position: absolute;
+  bottom: 135%;
+  right: 0;
+  left: 0;
+  opacity: 0.9;
+  transform: scale(3);
+  transition: all 0.3s linear 0s;
+}
+ 
+.our-team:hover .picture::before {
+   height: 100%;
+}
+
+.our-team .picture::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #1369ce;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.our-team .picture img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  transform: scale(1);
+  transition: all 0.9s ease 0s;
+}
+
+.our-team:hover .picture img {
+  box-shadow: 0 0 0 14px #f7f5ec;
+  transform: scale(0.7);
+}
+
+.our-team .title {
+  display: block;
+  font-size: 15px;
+  color: #4e5052;
+  text-transform: capitalize;
+}
+
+.our-team .name {
+    font-style: italic;
+    font-family: cursive;
+    color: black;
+    font-size: medium;
+}
+
+.our-team .team-content {
+    margin-bottom: 22px;
+}
+
+.our-team .social {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: #1369ce;
+  position: absolute;
+  bottom: -100px;
+  left: 0;
+  transition: all 0.5s ease 0s;
+}
+
+.our-team:hover .social {
+  bottom: 0;
+}
+
+.our-team .social li {
+  display: inline-block;
+}
+
+.our-team .social li a {
+  display: block;
+  padding: 10px;
+  font-size: 17px;
+  color: white;
+  transition: all 0.3s ease 0s;
+  text-decoration: none;
+}
+
+.our-team .social li a:hover {
+  color: #1369ce;
+  background-color: #f7f5ec;
+}
+
+
+/* Text effect with scrolling animation */
+/* .container50 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 200vh; 
+}
+
+.text {
+  font-size: 10vw;
+  letter-spacing: -.01em;
+  line-height: 100%;
+  margin: 0;
+
+  width: 100%;
+  color: rgb(182, 182, 182, 0.2);
+  background: linear-gradient(to right, #b6b6b6, #b6b6b6) no-repeat;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-size: 0%;
+
+  transition: background-size cubic-bezier(.1, .5, 5, 1) 0.5s;
+  border-bottom: 1px solid #2F2B28;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+
+}
+
+span {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #4246ce;
+  color: #0D0D0D;
+
+  clip-path: polygon (0 50%, 100% 50%, 100% 50%, 0 50%);
+  transform-origin: center;
+  transition: all cubic-bezier(.1, .5, .5, 1) 0.4s;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.text:hover>span {
+  clip-path: polygon (00, 100% 0, 100% 100%, 0% 100%);
+
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+} */

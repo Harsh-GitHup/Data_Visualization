@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Visualization</title>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='white.png') }}" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+    <nav class="nav">
+        <img src="{{ url_for('static', filename='background-removebg-preview.png') }}" alt="Logo">
+        <a href="{{ url_for('index') }}"><b>Home</b><i class="fa fa-fw fa-home"></i></a>
+        <a href="{{ url_for('about') }}"><b>About</b><i class="fa fa-fw fa-info"></i></a>
+        <a href="{{ url_for('Why') }}"><b>Why us</b><i class="fa fa-fw fa-question"></i></a>
+        <!-- <a href="{{ url_for('login') }}"><b>Login</b><i class="fa fa-fw fa-sign-in"></i></a> -->
+    </nav>
+
+    <br>
+    <br>
+    <br>
+            
+    <h1 style="text-align: center; text-shadow: 3px 4px 2px rgba(99, 99, 99, 0.792);"><p>Login/Register page</p></h1>
+    <br>
+    <br>
+
+
+    <div class="section">
+        <!-- Form Part -->
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+
+                <button type="button" class="toggle-btn" onclick="login()">Login</button>
+                <button type="button" class="toggle-btn" onclick="register()">Register</button>
+            </div>
+            <div class="social-icons">
+                <a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-facebook" aria-hidden="true">&nbsp;&nbsp;&nbsp;</a>
+                <a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-twitter" aria-hidden="true">&nbsp;&nbsp;&nbsp;</a>
+                <a target="_blank" href="https://pitatnzujpbpsxtkarawkqbn.hi.link/" class="fa fa-globe" aria-hidden="true">&nbsp;&nbsp;&nbsp;</a>
+                <a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-linkedin" aria-hidden="true">&nbsp;&nbsp;&nbsp;</a>
+            </div>
+
+            <form action="/login" id="login" class="input-group">
+                <input type="text" class="input-field" placeholder="User Id" required>
+                <input type="text" class="input-field" placeholder="Enter Password" required>
+                <input type="checkbox" class="check-box"><span>Remember Password</span>
+                <button type="submit" class="submit-btn">Log in</button>
+            </form>
+
+            <form action="/register" id="register" value="register" class="input-group">
+                <input type="text" class="input-field" placeholder="User Id" required>
+                <input type="email" class="input-field" placeholder="Email Id" required>
+                <input type="text" class="input-field" placeholder="Enter Password" required>
+                <input type="text" class="input-field" placeholder="Confirm Password" required>
+                <input type="checkbox" class="check-box"><span>I agree to the terms & condition</span>
+                <button type="submit" class="submit-btn">Sign Up</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- JavaScript Part -->
+    <script>
+        var x = document.getElementById("login");
+        var y = document.getElementById("register");
+        var z = document.getElementById("btn");
+
+        // Register and login Function.
+        function register() {
+            x.style.left = "-400px";
+            y.style.left = "50px";
+            z.style.left = "110px";
+        }
+        function login() {
+            x.style.left = "50px";
+            y.style.left = "450px";
+            z.style.left = "0px";
+        }
+    </script>
+
+    <br><br><br>
+
+    <footer class="footer">
+        <b><p style="margin-top: 10px;">&copy; 2023 Your Company. All rights reserved. | <a type="button" href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p></b>
+        <!-- <section> -->
+            <div>
+                <p style="text-align: center; margin-bottom: 4px; margin-top: 10px;"><u><b>Connect with us</b></u></p>
+                <div class="social1">
+                    <ul class="social2">
+                       <a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-facebook" aria-hidden="true">&nbsp;&nbsp;&nbsp;</a>
+                       <a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-twitter" aria-hidden="true">&nbsp;&nbsp;&nbsp;</a>
+                       <a target="_blank" href="https://pitatnzujpbpsxtkarawkqbn.hi.link/" class="fa fa-globe" aria-hidden="true">&nbsp;&nbsp;&nbsp;</a>
+                       <a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-linkedin" aria-hidden="true">&nbsp;&nbsp;&nbsp;</a>
+                    </ul>
+                </div>
+            </div>
+        <!-- </section> -->
+    </footer>
+
+</body>
+
+</html>
