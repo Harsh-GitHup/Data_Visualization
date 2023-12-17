@@ -2,9 +2,8 @@
 <h2>What is Data Visualization?</h2>
 <p>Data visualizations are essential to understand complex data and generate results for business related and research purposes. This presentation will explore different Python libraries to create meaningful data visualizations and provide tips and tricks to create powerful visuals. </p>
 
-<p align="justify">It's a Web Application Tool which is based on Data visualisation technology.
-It aims to create project based on the concept of Data Visualization. By using this method it proves to be helpful to understand the range of Complex Data’s very easily from collection of data.
-It extracts useful information from large dataset. It shows data in an interactive Graphical view. It is possible to view data in the form of Advance Animations.A Data visualisation Tool. This is a Web Application tool. Data visualizations are essential to understand complex data and generate results for business related and research purposes. This presentation will explore different Python libraries to create meaningful data visualizations and provide tips and tricks to create powerful visuals. In this project i'm working as frontend developer. It aims to create project based on the concept of Data Visualization. By using this method it proves to be helpful to understand the range of Complex Data’s very easily from collection of data. It extracts useful information from large dataset. It shows data in an interactive Graphical view. It is possible to view data in the form of Advance Animations.</p>
+<p align="justify">It's a Web Application Tool which is based on Data visualisation technology.This tool will be helpful to understand patterns and trends of Complex Data’s very easily from datasets.
+It shows data in an interactive Graphical view and Advance Animations also. It extracts useful information from large dataset. </p>
 
 # Skills: 
 
