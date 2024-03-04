@@ -57,7 +57,7 @@ def upload():
             return 'No file selected'
 
         # Save the uploaded file
-        file_path = os.path.join(app.config['UPLOAD_FOLDER'], file.filename)
+        file_path = os.path.join(app.config['UPLOAD_FOLDER'], file.filename) # type: ignore
         file.save(file_path)
 
         # Store the file path in a session variable
@@ -91,8 +91,8 @@ def generate_graph(file_path, graph_type):
         # Remove the header line
         lines = lines[1:]
 
-         # Extract the data from each line
-        data = [line.strip().split() for line in data]
+        # Extract the data from each line
+        data = [line.strip().split() for line in data] # type: ignore
 
         # Create a DataFrame with the extracted data
         df = pd.DataFrame(data, columns=['Column_1', 'Column_2'])
@@ -125,7 +125,7 @@ def generate_graph(file_path, graph_type):
             # If the file has 'Name' and 'Marks' columns, group the data by 'Name' and 'Subject'
             # and calculate the average marks for each subject per student
             numeric_columns = ['Marks']
-            if data[numeric_columns].applymap(lambda x: isinstance(x, (int, float))).all().all():
+            if data[numeric_columns].applymap(lambda x: isinstance(x, (int, float))).all().all(): #type:ignore
                 grouped_data = data.groupby(['Name', 'Subject'])[numeric_columns].mean().reset_index()
                 x = grouped_data['Subject']
                 y = grouped_data['Marks']
@@ -197,7 +197,7 @@ def generate_graph(file_path, graph_type):
         plt.ylabel('Y-axis')
         plt.title('Scatter Plot')
         for i in range(len(x)):
-           plt.text(i + 1, y[i], student_names[i], ha='center', va='bottom', rotation='vertical')
+            plt.text(i + 1, y[i], student_names[i], ha='center', va='bottom', rotation='vertical')
         plt.xticks(rotation='vertical')  # Rotate the x-axis tick labels vertically
     elif graph_type == 'histogram':
         plt.hist(y, bins='auto')
@@ -219,7 +219,7 @@ def generate_graph(file_path, graph_type):
             plt.xticks(rotation='vertical')  # Rotate the x-axis tick labels vertically
     elif graph_type == 'pie':
         if isinstance(y[0], (int, float)):
-            plt.pie(y, labels=x, autopct='%1.1f%%')
+            plt.pie(y, labels=x, autopct='%1.1f%%') # type: ignore
         else:
             raise ValueError(f'Invalid column type: {type(y[0])}')
         plt.title('Pie Chart')
@@ -231,7 +231,7 @@ def generate_graph(file_path, graph_type):
             plt.ylabel('Y-axis')
             plt.title('Area Graph')
             for i in range(len(x)):
-               plt.text(i + 1, y[i], student_names[i], ha='center', va='bottom', rotation='vertical')
+                plt.text(i + 1, y[i], student_names[i], ha='center', va='bottom', rotation='vertical')
             plt.xticks(rotation='vertical')  # Rotate the x-axis tick labels vertically
         else:
             raise ValueError(f'Invalid column type: {type(y[0])}')
