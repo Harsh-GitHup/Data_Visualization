@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Visualization</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style3.css') }}">
+</head>
+<body>
+
+    <!-- <header>
+        <h1>Why Data Visualization?</h1>
+    </header> -->
+
+    <nav>
+        <ul>
+            <li><a href="{{ url_for('index') }}"><b>Home</b></a></li>
+            <li><a href="{{ url_for('about') }}"><b>About</b></a></li>
+            <li><a href="{{ url_for('Why') }}"><b>Why</b></a></li>
+        </ul> 
+    </nav>
+    
+    
+    <!-- <br> -->
+        <h3 style="text-align: center; color: rgb(255, 255, 255); background-color: black; margin: 17px 450px 0; padding:4px; border-radius: 15px;">Definition ↓</h3>
+    <div class="div1" style="margin-top: 6px;">
+        <p class="p1">
+            <b> 
+                Data Visualizations are essential to understand complex data and generate results for business related and research purposes. 
+                This presentation will explore different Python libraries to create meaningful data visualizations and provide tips and tricks
+                to create powerful visuals. It aims to create project based on the concept of data visualization.<br><br>By using this method it proves 
+                to be helpful  to understand  the range of Complex Data’s very easily from collection of  data. It extracts useful information 
+                from large dataset. It shows data in an interactive Graphical view. It is possible to view data in the form of Advance Animations. 
+                Choosing the right visualization is key to effectively communicate your data. Consider the type of data you have, the message 
+                you want to convey, and your audience. Different visualizations work better for different types of data.
+            </b>
+        </p>
+    </div>
+
+    <div class="div1">
+        <p class="p1">
+            <b>
+                Data Visualization enables the integration of data from various sources such as 
+                relational databases, data warehouses, cloud services, web services, flat files, 
+                and more. It provides a unified view of data regardless of its location or format.  
+            </b>
+        </p>
+    </div>
+    
+    <div class="div1">
+        <p class="p1">
+            <b>
+                It can also help to improve data quality and consistency, as well as reduce 
+                the costs and complexity associated with traditional data integration methods.
+            </b>
+        </p>
+    </div>
+    <br>
+    <h1 class="h9">Example</h1>
+    <br> 
+    <div class="div1">
+        <p class="p1">
+            <b>
+                Question:- An analysis has been done in the College to identify hobby of Students as given below.
+            </b>
+        </p>
+    </div>
+    <div class="div1">
+        <table>
+            <thead>
+                <tr>
+                    <th>Hobby</th>
+                    <th>No. of student</th>
+                 </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Music</td>
+                    <td>130</td>
+                </tr>
+                <tr>
+                    <td>Dance</td>
+                    <td>150</td>
+                </tr>
+                <tr>
+                    <td>Games</td>
+                    <td>180</td>
+                </tr>
+                <tr>
+                    <td>Reading</td>
+                    <td>75</td>
+                </tr>
+                <tr>
+                    <td>drawing</td>
+                    <td>160</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="div1" style="padding: 20px 25px 10px 25px; margin-top: 10px;">
+        <p class="p1">
+            <b>
+                Represent this data on the Pie Chart using Matplotlib library  of Python. Slice color must be pink, 
+                green, blue, gold and light sky  blue.  Now we understand it by reading code of python.     
+            </b>
+        </p>
+    </div>
+    
+    <h4 style="margin: 0 0 0 125px;">Ans:-</h4>
+    
+    <div class="div1">
+        <br>
+            <br>
+            <br>
+            <p style="color: black; font-size: 15px; text-decoration: solid; text-transform: none;">
+                <b>
+                    <u><b>Python code-</b></u> <br><br>
+                    from os import startfile <br>
+                    import matplotlib.pyplot as pl <br>
+                    x=['Music’, 'Dance’, 'Games’, 'Reading’, 'Drawing'] <br>
+                    y=[130,150,180,75,160] <br>
+                    c=['pink’, 'green’, 'blue’, 'gold’, 'lightskyblue']  <br>
+                    pl.figure(figsize=[8,5]) <br>
+                    pl.title("Hobbies Analysis") <br>
+                    pl.pie(y, labels=x, autopct="%2f%%", colours=c, shadow=True, startangle=170) <br>
+                    pl.show()
+                </b>
+            </p>
+            <span style="margin-top: 0px; ">
+                <!-- <img src="Picture1.png" alt="easily"> -->
+                <!-- <h2 style="text-align: center;">Pie-Chart</h2> -->
+                <!-- <img src="Figure_6.o.png" alt="easily" style="margin: 0 0 0 0; width: 250px;"> -->
+                <img src="{{ url_for('static', filename='Figure_6.o.png') }}" alt="easily" style="margin: 0 0 0 0; width: 250px;">
+                <h2 style="margin: 0 0 0 26%;">Pie-Chart</h2>  
+            </span>
+    </div>
+    <br>
+    <br>
+    <footer class="footer">
+        <p>&copy; 2023 Your Company. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    </footer>
+</body>
+</html>

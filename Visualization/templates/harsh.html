@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Data Visualization</title>
+        <link rel="shortcut icon" href="{{ url_for('static', filename='white.png') }}" type="image/x-icon">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style1.css') }}">
+    </head>
+<body>
+
+    <nav class="nav">
+        <img src="{{ url_for('static', filename='background-removebg-preview.png') }}" alt="Logo">
+        <a href="{{ url_for('index') }}"><b>Home</b><i class="fa fa-fw fa-home"></i></a>
+        <a href="{{ url_for('about') }}"><b>About</b><i class="fa fa-fw fa-info"></i></a>
+        <a href="{{ url_for('Why') }}"><b>Why</b><i class="fa fa-fw fa-question"></i></a>
+        <!-- <a href="#"><b>Contact</b><i class="fa fa-fw fa-user"></i></a> -->
+    </nav>
+
+    <br>
+    <br>
+    <br>
+            
+    <h4 style="margin-left: 35px; text-shadow: 3px 4px 2px rgba(99, 99, 99, 0.792);"><p>Let's transform your data into impactful visualizations!</p></h4>
+    <br>
+    <br>
+
+    <h1 class="h4">Import Files</h1>
+    <br><br>
+
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <label for="file">Upload File:</label>
+        <input type="file" id="file" name="file">
+        <label for="graph-type" style="margin-left: 22px;">Select Graph Type:</label>
+        <select id="graph-type" name="graph_type">
+            <option value="none" selected>None</option>
+            <option value="line">Line Graph</option>
+            <option value="bar">Bar Graph</option>
+            <option value="scatter">Scatter Plot</option>
+            <option value="histogram">Histogram</option>
+            <option value="pie">Pie-Chart</option>
+            <option value="boxplot">Box Plot</option>
+            <option value="area">Area</option>
+            <option value="missing">Missingo</option>
+        </select>
+        <button type="submit" class="btn"><b>Generate Graph</b></button>
+    </form>
+    <br>
+
+    <div id="graph-container">
+        <img style="border-radius: 20px; box-shadow: 12px 12px 12px  rgb(67, 66, 66); margin-bottom: 20px;" src="{{ url_for('static', filename='graph.png') }}" alt="Graph">
+    </div>
+    <br>
+
+    <!-- ... (previous content) ... -->
+
+    <h1 class="h4">Display Table Data</h1>
+
+    <br>
+    <br>
+
+    {% if dataframe %}
+        <div style="align-items: center;">
+            <!-- <h2>Data Frame</h2> -->
+            {{ dataframe | safe }}
+        </div>
+    {% endif %}
+    
+    <br>
+    <br>
+    <br>
+
+
+    <footer class="footer">
+        <b><p style="margin-top: 10px;">&copy; 2023 Your Company. All rights reserved. | <a type="button" href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p></b>
+        <!-- <section> -->
+            <div>
+                <p style="text-align: center; margin-bottom: 4px; margin-top: 10px;"><u><b>Connect with us</b></u></p>
+                <div class="social1">
+                    <ul class="social2">
+                        <a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-facebook" aria-hidden="true">&nbsp;&nbsp;&nbsp;</a>
+                        <a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-twitter" aria-hidden="true">&nbsp;&nbsp;&nbsp;</a>
+                        <a target="_blank" href="https://pitatnzujpbpsxtkarawkqbn.hi.link/" class="fa fa-globe" aria-hidden="true">&nbsp;&nbsp;&nbsp;</a>
+                        <a href="https://codepen.io/collection/XdWJOQ/" class="fa fa-linkedin" aria-hidden="true">&nbsp;&nbsp;&nbsp;</a>
+                    </ul>
+                </div>
+            </div>
+        <!-- </section> -->
+    </footer>
+
+</body>
+</html>
