@@ -2,6 +2,7 @@
 <h2>What is Data Visualization?</h2>
 <p>Data visualizations are essential to understand complex data and generate results for business related and research purposes. This presentation will explore different Python libraries to create meaningful data visualizations and provide tips and tricks to create powerful visuals. </p>
 
+# About the Data Visualization tool 
 <p align="justify">It's a Web Application Tool which is based on Data visualisation technology.This tool will be helpful to understand patterns and trends of Complex Data’s very easily from datasets.
 It shows data in an interactive Graphical view and Advance Animations also. It extracts useful information from large dataset. </p>
 
